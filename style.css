@@ -1,0 +1,25 @@
+/* Customizações e ajustes finos de CSS */
+
+/* Ocultar barra de rolagem horizontal nos chips de categoria */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animação suave para modals e interações */
+#cart-modal.show {
+  display: flex !important;
+  opacity: 1;
+}
+
+#cart-modal.show #cart-modal-content {
+  transform: translateY(0);
+}
+
+/* Transições suaves gerais */
+button, input {
+  transition: all 0.2s ease-in-out;
+}
